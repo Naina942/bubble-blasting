@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #222;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+#game-container {
+  position: relative;
+  margin: 20px auto;
+  width: 400px;
+  height: 600px;
+  background: linear-gradient(to top, #004466, #0088cc);
+  border: 2px solid #00cfff;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.bubble {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle at center, #00cfff, #004466);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.bubble:active {
+  transform: scale(0.8);
+}
+
+#score {
+  margin-top: 10px;
+  font-size: 20px;
+}
